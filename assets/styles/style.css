@@ -207,6 +207,12 @@ header {
   margin: 2vh 0;
   max-width: 300px;
   font-weight: 700;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.btn-cta-hero:hover {
+  transform: scale(1.03);
 }
 
 .ticker {
@@ -435,6 +441,11 @@ header {
   margin: 24px auto 0px;
   max-width: 300px;
   font-weight: 700;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-cta-final:hover {
+  transform: scale(1.03);
 }
 
 .whatsapp-float {
@@ -579,7 +590,8 @@ header {
     display: flex;
     gap: 24px;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    max-width: 900px;
   }
 
   .box-logo-final-footer {
@@ -605,7 +617,7 @@ header {
     background: transparent;
     padding: 0;
     box-shadow: none;
-    gap: 16px;
+    gap: 12px;
   }
 
   .item-li {
@@ -647,9 +659,15 @@ header {
     display: inline-block;
     background: white;
     color: var(--vermelho);
-    padding: 4px 12px;
+    padding: 6px 16px;
     border-radius: 4px;
     text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+    font-weight: 700;
+  }
+
+  .cta-header:hover {
+    transform: scale(1.05);
   }
 
   /* Esconde botão menu */
@@ -658,7 +676,7 @@ header {
   }
   .tit-hero {
     max-width: 50vw;
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .subtit-hero {
     max-width: 50vw;
@@ -719,11 +737,44 @@ header {
     top: -40px;
   }
 
-  
-
-
   .box-cards-informacoes-como-comprar {
     display: flex;
-    gap: 24px ;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1640px) {
+
+  .navbar-header {
+    padding: 12px 15vw;
+  }
+
+  .hero {
+    padding: 2vh 10vw;
+  }
+
+  .sobre {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .box-img-sobre img {
+    border-radius: 8px;
+    border-right: solid;
+  }
+
+  .box-cards-diferenciais {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .produtos {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .img-produtos {
+    border-radius: 8px;
+    border-left: solid;
   }
 }
