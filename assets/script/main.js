@@ -23,3 +23,18 @@ btnFechar.addEventListener("click", () => {
   menu.classList.remove("active");
   btnMenu.classList.remove("open");
 });
+
+const elementos = document.querySelectorAll(".animar-direita");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("ativo");
+      }
+    });
+  },
+  { threshold: 0.5 },
+);
+
+elementos.forEach((el) => observer.observe(el));
