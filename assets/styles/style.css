@@ -32,11 +32,16 @@
   --azul-escuro: #08295d;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--fonte-principal);
   line-height: 1.4;
   color: var(--azul-escuro);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* HEADER */
